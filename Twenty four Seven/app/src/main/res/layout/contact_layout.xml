@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/emergency_tab_main_content"
+    android:layout_width="wrap_content"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    tools:context=".Drawer">
+
+    <!--Cardview: police-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/police"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/emergency_numbers_cards_lateral_margins"
+        android:layout_marginRight="@dimen/emergency_numbers_cards_lateral_margins"
+        android:layout_marginBottom="@dimen/emergency_numbers_cards_vertical_margins"
+        android:layout_marginTop="@dimen/emergency_numbers_cards_vertical_margins"
+        app:cardCornerRadius="2dp"
+        app:contentPadding="@dimen/emergency_numbers_cards_content_padding">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/contact_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/police"
+                android:contentDescription="@string/phone_icon"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp" />
+
+
+            <!--Phone icon-->
+            <ImageView
+                android:id="@+id/callpolice"
+                android:clickable="true"
+                android:onClick="call_phone_no"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_phone_black_24dp"
+                android:contentDescription="@string/phone_icon"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <!--Police number-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textFontWeight="1"
+                android:id="@+id/contact_no"
+                android:text="09033045423"
+                android:textColor="@color/colorEmergencyCardsText"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp" />
+
+            <TextView
+                android:id="@+id/contact_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/police_string"
+                android:textFontWeight="1"
+                android:paddingLeft="55dp"
+                android:textColor="@color/colorEmergencyCardsText"
+                android:layout_marginLeft="0sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

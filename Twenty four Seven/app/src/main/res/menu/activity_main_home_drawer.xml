@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:iconTint="@color/white"
+            android:title="Home" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_emergencies"
+            android:icon="@drawable/ic_report_problem_black_24dp"
+            android:iconTint="@color/white"
+            android:title="Emmergencies" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            android:iconTint="@color/white"
+            android:title="Contacts" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/nav_locations"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:iconTint="@color/white"
+            android:title="Locations" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+            <item
+                android:id="@+id/nav_logout"
+                android:iconTint="@color/white"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="Log Out" />
+    </group>
+</menu>

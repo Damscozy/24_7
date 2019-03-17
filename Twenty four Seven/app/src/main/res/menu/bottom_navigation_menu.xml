@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hospitals"
+        android:icon="@drawable/ic_healing_black_24dp"
+        android:title="Hospitals"/>
+
+    <item
+        android:id="@+id/policestation"
+        android:icon="@drawable/ic_local_car_wash_black_24dp"
+        android:title="Police Stations"/>
+
+    <item
+        android:id="@+id/firehouse"
+        android:icon="@drawable/extinguisher"
+        android:title="Fire House"/>
+
+</menu>

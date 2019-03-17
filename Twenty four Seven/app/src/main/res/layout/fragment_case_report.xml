@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+   <LinearLayout
+       android:layout_margin="20dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <EditText
+          android:id="@+id/edttitle"
+          android:hint="Title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColorHint="@color/colorPrimary"
+          android:text=""
+          android:textColor="@color/colorPrimary"
+          android:textSize="24sp"
+          android:inputType="text" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtdate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:inputType="text"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+
+                <EditText
+                    android:id="@+id/edtlocation1"
+                    android:hint="Location"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorPrimary"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+      </RelativeLayout>
+      <EditText
+          android:id="@+id/edtdescription"
+          android:hint="Description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColorHint="@color/colorPrimary"
+          android:text=""
+          android:textColor="@color/colorPrimary"
+          android:textSize="28sp"
+          android:inputType="textPostalAddress" />
+
+      <Button
+          android:id="@+id/submit"
+          android:layout_width="123dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_weight="1"
+          android:background="@color/colorPrimaryDark"
+          android:text="Submit"
+          android:textColor="@android:color/white" />
+
+   </LinearLayout>
+
+</android.support.v7.widget.CardView>

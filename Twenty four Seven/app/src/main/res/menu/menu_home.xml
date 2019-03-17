@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alerter.Home">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/points"
+        android:orderInCategory="200"
+        android:title="Cart"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Drawer">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:background="@color/emergencyred"
+        android:backgroundTint="@color/lightred">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            app:cardElevation="25dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".Home">
+                <TextView
+                    android:id="@+id/temp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lightblue"
+                    android:layout_alignLeft="@+id/date_text"
+                    android:layout_below="@+id/date_text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="110sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/date_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/city_text"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:id="@+id/descrip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/coolred"
+                    android:layout_below="@+id/temp_text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="italic"
+                    android:layout_alignTop="@+id/temp_text"
+                    android:layout_toRightOf="@+id/temp_text"
+                    android:text="  C"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageView
+                    android:id="@+id/weather_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/city_text"
+                    android:layout_marginTop="71dp"
+                    android:src="@drawable/icon_clearsky" />
+
+                <TextView
+                    android:id="@+id/presentlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textStyle="italic"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/weather_imageView"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="389dp"
+        android:layout_height="151dp"
+        android:layout_below="@+id/relative"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:cardElevation="25dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="51dp"
+                android:src="@drawable/panic"
+                android:paddingTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aware of an Emergency?"
+                    android:textColor="@color/emergencyred"/>
+
+                <TextView
+                    android:layout_width="253dp"
+                    android:layout_height="94dp"
+                    android:textStyle="italic"
+                    android:text="Are you aware of an emergency? do quick to alert everyone on the platform, and get a quick response..Please note, If you need an Urgent Response, press any of the panic buttton " />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="left"
+                    android:gravity="left">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:id="@+id/btnreportemergency"
+                        android:layout_height="26dp"
+                        android:layout_gravity="start"
+                        android:background="@drawable/transparent"
+                        android:gravity="start"
+                        android:text="Report Emergency"
+                        android:textColor="@color/coolred"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+          <!--  <Button
+                android:id="@+id/btnreportemergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProfileDetails" />-->
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
